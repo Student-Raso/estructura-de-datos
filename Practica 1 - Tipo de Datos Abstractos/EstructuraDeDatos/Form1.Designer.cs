@@ -45,24 +45,28 @@ namespace EstructuraDeDatos
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.secuenciaDeFiconacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(811, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1081, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // menuStrip2
             // 
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.conceptosBasicosToolStripMenuItem,
             this.arreglosToolStripMenuItem,
@@ -71,7 +75,7 @@ namespace EstructuraDeDatos
             this.arbolesBinariosToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(811, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(1081, 28);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -82,7 +86,7 @@ namespace EstructuraDeDatos
             this.practica1TiposDeDatosAbstractosToolStripMenuItem,
             this.recursividadToolStripMenuItem});
             this.conceptosBasicosToolStripMenuItem.Name = "conceptosBasicosToolStripMenuItem";
-            this.conceptosBasicosToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
+            this.conceptosBasicosToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
             this.conceptosBasicosToolStripMenuItem.Text = "1. Conceptos basicos";
             this.conceptosBasicosToolStripMenuItem.Click += new System.EventHandler(this.conceptosBasicosToolStripMenuItem_Click);
             // 
@@ -91,54 +95,57 @@ namespace EstructuraDeDatos
             this.practica1TiposDeDatosAbstractosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.practica1TiposToolStripMenuItem});
             this.practica1TiposDeDatosAbstractosToolStripMenuItem.Name = "practica1TiposDeDatosAbstractosToolStripMenuItem";
-            this.practica1TiposDeDatosAbstractosToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.practica1TiposDeDatosAbstractosToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
             this.practica1TiposDeDatosAbstractosToolStripMenuItem.Text = "Tipos de datos abstractos";
             this.practica1TiposDeDatosAbstractosToolStripMenuItem.Click += new System.EventHandler(this.practica1TiposDeDatosAbstractosToolStripMenuItem_Click);
             // 
             // practica1TiposToolStripMenuItem
             // 
             this.practica1TiposToolStripMenuItem.Name = "practica1TiposToolStripMenuItem";
-            this.practica1TiposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.practica1TiposToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.practica1TiposToolStripMenuItem.Text = "Practica 1 - Tipos";
             this.practica1TiposToolStripMenuItem.Click += new System.EventHandler(this.practica1TiposToolStripMenuItem_Click);
             // 
             // recursividadToolStripMenuItem
             // 
+            this.recursividadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.secuenciaDeFiconacciToolStripMenuItem});
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
-            this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
             // 
             // arreglosToolStripMenuItem
             // 
             this.arreglosToolStripMenuItem.Name = "arreglosToolStripMenuItem";
-            this.arreglosToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.arreglosToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.arreglosToolStripMenuItem.Text = "2. Arreglos";
             // 
             // listasToolStripMenuItem
             // 
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.listasToolStripMenuItem.Text = "3. Listas";
             // 
             // pilasYColasToolStripMenuItem
             // 
             this.pilasYColasToolStripMenuItem.Name = "pilasYColasToolStripMenuItem";
-            this.pilasYColasToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.pilasYColasToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.pilasYColasToolStripMenuItem.Text = "4. Pilas y colas";
             // 
             // arbolesBinariosToolStripMenuItem
             // 
             this.arbolesBinariosToolStripMenuItem.Name = "arbolesBinariosToolStripMenuItem";
-            this.arbolesBinariosToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.arbolesBinariosToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.arbolesBinariosToolStripMenuItem.Text = "5. Arboles binarios";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
-            this.label1.Location = new System.Drawing.Point(39, 48);
+            this.label1.Location = new System.Drawing.Point(52, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 30);
+            this.label1.Size = new System.Drawing.Size(296, 37);
             this.label1.TabIndex = 3;
             this.label1.Text = "Estructura de datos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -148,9 +155,10 @@ namespace EstructuraDeDatos
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(76, 130);
+            this.label2.Location = new System.Drawing.Point(101, 160);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(408, 84);
+            this.label2.Size = new System.Drawing.Size(506, 104);
             this.label2.TabIndex = 4;
             this.label2.Text = "El alumno empleará estructuras de datos abstractas\r\nen el desarrollo de aplicacio" +
     "nes multiplataforma\r\nusando el paradigma orientado a objetos para agilizar\r\nel a" +
@@ -161,22 +169,30 @@ namespace EstructuraDeDatos
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(119, 258);
+            this.label3.Location = new System.Drawing.Point(159, 318);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(345, 64);
+            this.label3.Size = new System.Drawing.Size(440, 76);
             this.label3.TabIndex = 5;
             this.label3.Text = "Universidad Tacnológica de Hermosillo\r\nTSU Tecnologías de la Información -Desarro" +
     "llo de Software\r\nEstructura de Datos\r\nAndrés Raso Ramírez";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
+            // secuenciaDeFiconacciToolStripMenuItem
+            // 
+            this.secuenciaDeFiconacciToolStripMenuItem.Name = "secuenciaDeFiconacciToolStripMenuItem";
+            this.secuenciaDeFiconacciToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.secuenciaDeFiconacciToolStripMenuItem.Text = "Secuencia de Ficonacci";
+            this.secuenciaDeFiconacciToolStripMenuItem.Click += new System.EventHandler(this.secuenciaDeFiconacciToolStripMenuItem_Click);
+            // 
             // EstructuraDeDatos
             // 
             this.AccessibleDescription = "";
             this.AccessibleName = "";
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(811, 411);
+            this.ClientSize = new System.Drawing.Size(1081, 506);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -185,6 +201,7 @@ namespace EstructuraDeDatos
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "EstructuraDeDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -213,6 +230,7 @@ namespace EstructuraDeDatos
         private System.Windows.Forms.ToolStripMenuItem practica1TiposDeDatosAbstractosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem practica1TiposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recursividadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem secuenciaDeFiconacciToolStripMenuItem;
     }
 }
 

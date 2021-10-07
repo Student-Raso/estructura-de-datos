@@ -43,5 +43,11 @@ namespace EstructuraDeDatos
         {
 
         }
+
+        private void secuenciaDeFiconacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fibonacci frm = new Fibonacci();
+            frm.ShowDialog();
+        }
     }
 }
