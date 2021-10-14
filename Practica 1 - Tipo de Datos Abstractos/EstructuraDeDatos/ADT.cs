@@ -127,12 +127,10 @@ namespace EstructuraDeDatos
                     abstractype2 = new ADT_2(textBox1.Text, textBox2.Text);
                     dataGridView1[c, r].Value = abstractype2.propiedad_3 + Environment.NewLine + abstractype2.propiedad_4;
                 }
-
                 else
                 {
                     dataGridView1[c, r].Value = textBox1.Text;
                 }
-                
                 c++;
                 if (c == 3)
                 {
@@ -170,6 +168,11 @@ namespace EstructuraDeDatos
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

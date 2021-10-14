@@ -1,7 +1,7 @@
 ﻿
 namespace EstructuraDeDatos
 {
-    partial class EstructuraDeDatos
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace EstructuraDeDatos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EstructuraDeDatos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
@@ -38,14 +38,16 @@ namespace EstructuraDeDatos
             this.practica1TiposDeDatosAbstractosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.practica1TiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recursividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.secuenciaDeFiconacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arreglosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matricesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.memoramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasYColasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesBinariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.secuenciaDeFiconacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,7 +104,7 @@ namespace EstructuraDeDatos
             // practica1TiposToolStripMenuItem
             // 
             this.practica1TiposToolStripMenuItem.Name = "practica1TiposToolStripMenuItem";
-            this.practica1TiposToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.practica1TiposToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.practica1TiposToolStripMenuItem.Text = "Practica 1 - Tipos";
             this.practica1TiposToolStripMenuItem.Click += new System.EventHandler(this.practica1TiposToolStripMenuItem_Click);
             // 
@@ -114,11 +116,35 @@ namespace EstructuraDeDatos
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
             // 
+            // secuenciaDeFiconacciToolStripMenuItem
+            // 
+            this.secuenciaDeFiconacciToolStripMenuItem.Name = "secuenciaDeFiconacciToolStripMenuItem";
+            this.secuenciaDeFiconacciToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.secuenciaDeFiconacciToolStripMenuItem.Text = "Secuencia de Ficonacci";
+            this.secuenciaDeFiconacciToolStripMenuItem.Click += new System.EventHandler(this.secuenciaDeFiconacciToolStripMenuItem_Click);
+            // 
             // arreglosToolStripMenuItem
             // 
+            this.arreglosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.matricesToolStripMenuItem});
             this.arreglosToolStripMenuItem.Name = "arreglosToolStripMenuItem";
             this.arreglosToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.arreglosToolStripMenuItem.Text = "2. Arreglos";
+            // 
+            // matricesToolStripMenuItem
+            // 
+            this.matricesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.memoramaToolStripMenuItem});
+            this.matricesToolStripMenuItem.Name = "matricesToolStripMenuItem";
+            this.matricesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.matricesToolStripMenuItem.Text = "Matrices";
+            // 
+            // memoramaToolStripMenuItem
+            // 
+            this.memoramaToolStripMenuItem.Name = "memoramaToolStripMenuItem";
+            this.memoramaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.memoramaToolStripMenuItem.Text = "Memorama";
+            this.memoramaToolStripMenuItem.Click += new System.EventHandler(this.memoramaToolStripMenuItem_Click);
             // 
             // listasToolStripMenuItem
             // 
@@ -178,14 +204,7 @@ namespace EstructuraDeDatos
     "llo de Software\r\nEstructura de Datos\r\nAndrés Raso Ramírez";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // secuenciaDeFiconacciToolStripMenuItem
-            // 
-            this.secuenciaDeFiconacciToolStripMenuItem.Name = "secuenciaDeFiconacciToolStripMenuItem";
-            this.secuenciaDeFiconacciToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.secuenciaDeFiconacciToolStripMenuItem.Text = "Secuencia de Ficonacci";
-            this.secuenciaDeFiconacciToolStripMenuItem.Click += new System.EventHandler(this.secuenciaDeFiconacciToolStripMenuItem_Click);
-            // 
-            // EstructuraDeDatos
+            // Form1
             // 
             this.AccessibleDescription = "";
             this.AccessibleName = "";
@@ -201,9 +220,9 @@ namespace EstructuraDeDatos
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "EstructuraDeDatos";
+            this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de Datos";
             this.Load += new System.EventHandler(this.EstructuraDeDatos_Load);
@@ -231,6 +250,8 @@ namespace EstructuraDeDatos
         private System.Windows.Forms.ToolStripMenuItem practica1TiposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recursividadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem secuenciaDeFiconacciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matricesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem memoramaToolStripMenuItem;
     }
 }
 

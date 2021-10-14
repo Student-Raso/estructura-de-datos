@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EstructuraDeDatos
 {
-    public partial class EstructuraDeDatos : Form
+    public partial class Form1 : Form
     {
-        public EstructuraDeDatos()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -47,6 +47,12 @@ namespace EstructuraDeDatos
         private void secuenciaDeFiconacciToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Fibonacci frm = new Fibonacci();
+            frm.ShowDialog();
+        }
+
+        private void memoramaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Memorama frm = new Memorama();
             frm.ShowDialog();
         }
     }
