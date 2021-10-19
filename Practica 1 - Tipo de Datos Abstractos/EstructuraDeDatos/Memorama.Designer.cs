@@ -46,6 +46,8 @@ namespace EstructuraDeDatos
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.RESTART = new System.Windows.Forms.Button();
+            this.LABEL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -240,11 +242,37 @@ namespace EstructuraDeDatos
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
+            // RESTART
+            // 
+            this.RESTART.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RESTART.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.RESTART.Location = new System.Drawing.Point(654, 46);
+            this.RESTART.Name = "RESTART";
+            this.RESTART.Size = new System.Drawing.Size(146, 40);
+            this.RESTART.TabIndex = 16;
+            this.RESTART.Text = "RESTART";
+            this.RESTART.UseVisualStyleBackColor = true;
+            this.RESTART.Click += new System.EventHandler(this.RESTART_Click);
+            // 
+            // LABEL
+            // 
+            this.LABEL.AutoSize = true;
+            this.LABEL.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LABEL.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LABEL.Location = new System.Drawing.Point(664, 119);
+            this.LABEL.Name = "LABEL";
+            this.LABEL.Size = new System.Drawing.Size(107, 33);
+            this.LABEL.TabIndex = 17;
+            this.LABEL.Text = "ORDER";
+            this.LABEL.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Memorama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 753);
+            this.ClientSize = new System.Drawing.Size(863, 807);
+            this.Controls.Add(this.LABEL);
+            this.Controls.Add(this.RESTART);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox15);
@@ -282,6 +310,7 @@ namespace EstructuraDeDatos
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -303,5 +332,7 @@ namespace EstructuraDeDatos
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Button RESTART;
+        private System.Windows.Forms.Label LABEL;
     }
 }
