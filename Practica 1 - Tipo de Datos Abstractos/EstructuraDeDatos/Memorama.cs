@@ -18,18 +18,24 @@ namespace EstructuraDeDatos
         bool esperando = false;
         int idTemporal = 0;
         PictureBox imagenTemporal = null;
+        int intentos = 0;
+        int pares = 0;
         private void Voltear(PictureBox imagen, int id)
         {
             imagen.Image = Image.FromFile(@"C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\img\"+imagenes[id]+ ".png");
             imagen.Update();
+
             if (esperando==false)
             {
                 imagenTemporal = imagen;
                 idTemporal = id;
+                imagen.Enabled = false;
                 esperando = true;
             }
             else
             {
+                intentos ++;
+                label1.Text = "INTENTOS = "+intentos;
                 if (imagenes[id]==imagenes[idTemporal])
                 {
                     MessageBox.Show("Encontramos un par");
@@ -37,6 +43,12 @@ namespace EstructuraDeDatos
                     imagenTemporal.Enabled = false;
                     imagen.Visible = false;
                     imagenTemporal.Visible = false;
+                    pares ++;
+                    label2.Text = "PARES = " + pares;
+                    if (pares == 8)
+                    {
+                        MessageBox.Show("Felicidades, Haz Ganado!!!");
+                    }
                 }
                 else
                 {
@@ -45,6 +57,7 @@ namespace EstructuraDeDatos
                     imagenTemporal.Image = Image.FromFile(@"C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\img\amverso.png");
                     MessageBox.Show("No es un Par");
                     imagen.Update();
+                    imagenTemporal.Enabled = true;
                     imagenTemporal.Update();
                 }
                 esperando = false;
@@ -160,12 +173,53 @@ namespace EstructuraDeDatos
             pictureBox14.Image = Image.FromFile(@"C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\img\amverso.png");
             pictureBox15.Image = Image.FromFile(@"C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\img\amverso.png");
             pictureBox16.Image = Image.FromFile(@"C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\img\amverso.png");
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = true;
+            pictureBox4.Visible = true;
+            pictureBox5.Visible = true;
+            pictureBox6.Visible = true;
+            pictureBox7.Visible = true;
+            pictureBox8.Visible = true;
+            pictureBox9.Visible = true;
+            pictureBox10.Visible = true;
+            pictureBox11.Visible = true;
+            pictureBox12.Visible = true;
+            pictureBox13.Visible = true;
+            pictureBox14.Visible = true;
+            pictureBox15.Visible = true;
+            pictureBox16.Visible = true;
+            pictureBox1.Enabled = true;
+            pictureBox2.Enabled = true;
+            pictureBox3.Enabled = true;
+            pictureBox4.Enabled = true;
+            pictureBox5.Enabled = true;
+            pictureBox6.Enabled = true;
+            pictureBox7.Enabled = true;
+            pictureBox8.Enabled = true;
+            pictureBox9.Enabled = true;
+            pictureBox10.Enabled = true;
+            pictureBox11.Enabled = true;
+            pictureBox12.Enabled = true;
+            pictureBox13.Enabled = true;
+            pictureBox14.Enabled = true;
+            pictureBox15.Enabled = true;
+            pictureBox16.Enabled = true;
             Memorama_Load(sender, e);
+            intentos = 0;
+            label1.Text = "INTENTOS = " + intentos;
+            pares = 0;
+            label2.Text = "PARES = " + pares;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
             LABEL.Text = string.Join(" , ", imagenes);
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
