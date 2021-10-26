@@ -20,6 +20,8 @@ namespace EstructuraDeDatos
         PictureBox imagenTemporal = null;
         int intentos = 0;
         int pares = 0;
+        int segundos = 0;
+        int minutos = 0;
         private void Voltear(PictureBox imagen, int id)
         {
             imagen.Image = Image.FromFile(@"C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\img\"+imagenes[id]+ ".png");
@@ -38,7 +40,6 @@ namespace EstructuraDeDatos
                 label1.Text = "INTENTOS = "+intentos;
                 if (imagenes[id]==imagenes[idTemporal])
                 {
-                    MessageBox.Show("Encontramos un par");
                     imagen.Enabled = false;
                     imagenTemporal.Enabled = false;
                     imagen.Visible = false;
@@ -47,7 +48,12 @@ namespace EstructuraDeDatos
                     label2.Text = "PARES = " + pares;
                     if (pares == 8)
                     {
-                        MessageBox.Show("Felicidades, Haz Ganado!!!");
+                        timer1.Stop();
+                        MessageBox.Show("Felicidades, Haz Ganado!!!"+"En "+ intentos +" Intentos"+" en un tiempo de "+minutos+" Minutos y "+segundos+" Segundos");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Encontramos un par");
                     }
                 }
                 else
@@ -210,6 +216,10 @@ namespace EstructuraDeDatos
             label1.Text = "INTENTOS = " + intentos;
             pares = 0;
             label2.Text = "PARES = " + pares;
+            segundos = 0;
+            minutos = 0;
+            label3.Text = "00:00";
+            timer1.Enabled = true;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -220,6 +230,17 @@ namespace EstructuraDeDatos
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            segundos++;
+            if (segundos == 60)
+            {
+                segundos = 0;
+                minutos++;
+            }
+            label3.Text = minutos.ToString().PadLeft(2, '0')+":"+ segundos.ToString().PadLeft(2, '0');
         }
     }
 }
