@@ -16,7 +16,7 @@ namespace EstructuraDeDatos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Memorama());
+            Application.Run(new Form1());
         }
     }
 }
