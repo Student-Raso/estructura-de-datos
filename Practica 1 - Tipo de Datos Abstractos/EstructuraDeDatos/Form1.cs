@@ -55,5 +55,11 @@ namespace EstructuraDeDatos
             Memorama frm = new Memorama();
             frm.ShowDialog();
         }
+
+        private void pilaGenericaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PilaGenerica frm = new PilaGenerica();
+            frm.ShowDialog();
+        }
     }
 }

@@ -24,3 +24,4 @@ C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practic
 C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\bin\Debug\EstructuraDeDatos.pdb
 C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\obj\Debug\EstructuraDeDatos.Form1.resources
 C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\obj\Debug\EstructuraDeDatos.Memorama.resources
+C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\obj\Debug\EstructuraDeDatos.PilaGenerica.resources

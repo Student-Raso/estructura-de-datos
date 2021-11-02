@@ -72,6 +72,12 @@
     <Compile Include="Memorama.Designer.cs">
       <DependentUpon>Memorama.cs</DependentUpon>
     </Compile>
+    <Compile Include="PilaGenerica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PilaGenerica.Designer.cs">
+      <DependentUpon>PilaGenerica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Practica 1 - Tipos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Memorama.resx">
       <DependentUpon>Memorama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PilaGenerica.resx">
+      <DependentUpon>PilaGenerica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Practica 1 - Tipos.resx">
       <DependentUpon>Practica 1 - Tipos.cs</DependentUpon>

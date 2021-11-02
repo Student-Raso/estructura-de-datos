@@ -48,15 +48,17 @@ namespace EstructuraDeDatos
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pilaGenericaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 28);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1081, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1081, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,7 +79,7 @@ namespace EstructuraDeDatos
             this.arbolesBinariosToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1081, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(1081, 30);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -88,7 +90,7 @@ namespace EstructuraDeDatos
             this.practica1TiposDeDatosAbstractosToolStripMenuItem,
             this.recursividadToolStripMenuItem});
             this.conceptosBasicosToolStripMenuItem.Name = "conceptosBasicosToolStripMenuItem";
-            this.conceptosBasicosToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.conceptosBasicosToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.conceptosBasicosToolStripMenuItem.Text = "1. Conceptos basicos";
             this.conceptosBasicosToolStripMenuItem.Click += new System.EventHandler(this.conceptosBasicosToolStripMenuItem_Click);
             // 
@@ -128,7 +130,7 @@ namespace EstructuraDeDatos
             this.arreglosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.matricesToolStripMenuItem});
             this.arreglosToolStripMenuItem.Name = "arreglosToolStripMenuItem";
-            this.arreglosToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.arreglosToolStripMenuItem.Size = new System.Drawing.Size(94, 26);
             this.arreglosToolStripMenuItem.Text = "2. Arreglos";
             // 
             // matricesToolStripMenuItem
@@ -136,32 +138,34 @@ namespace EstructuraDeDatos
             this.matricesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.memoramaToolStripMenuItem});
             this.matricesToolStripMenuItem.Name = "matricesToolStripMenuItem";
-            this.matricesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.matricesToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.matricesToolStripMenuItem.Text = "Matrices";
             // 
             // memoramaToolStripMenuItem
             // 
             this.memoramaToolStripMenuItem.Name = "memoramaToolStripMenuItem";
-            this.memoramaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.memoramaToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.memoramaToolStripMenuItem.Text = "Memorama";
             this.memoramaToolStripMenuItem.Click += new System.EventHandler(this.memoramaToolStripMenuItem_Click);
             // 
             // listasToolStripMenuItem
             // 
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(74, 26);
             this.listasToolStripMenuItem.Text = "3. Listas";
             // 
             // pilasYColasToolStripMenuItem
             // 
+            this.pilasYColasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pilasToolStripMenuItem});
             this.pilasYColasToolStripMenuItem.Name = "pilasYColasToolStripMenuItem";
-            this.pilasYColasToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.pilasYColasToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.pilasYColasToolStripMenuItem.Text = "4. Pilas y colas";
             // 
             // arbolesBinariosToolStripMenuItem
             // 
             this.arbolesBinariosToolStripMenuItem.Name = "arbolesBinariosToolStripMenuItem";
-            this.arbolesBinariosToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.arbolesBinariosToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.arbolesBinariosToolStripMenuItem.Text = "5. Arboles binarios";
             // 
             // label1
@@ -203,6 +207,21 @@ namespace EstructuraDeDatos
             this.label3.Text = "Universidad Tacnológica de Hermosillo\r\nTSU Tecnologías de la Información -Desarro" +
     "llo de Software\r\nEstructura de Datos\r\nAndrés Raso Ramírez";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // pilasToolStripMenuItem
+            // 
+            this.pilasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pilaGenericaToolStripMenuItem});
+            this.pilasToolStripMenuItem.Name = "pilasToolStripMenuItem";
+            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pilasToolStripMenuItem.Text = "Pilas";
+            // 
+            // pilaGenericaToolStripMenuItem
+            // 
+            this.pilaGenericaToolStripMenuItem.Name = "pilaGenericaToolStripMenuItem";
+            this.pilaGenericaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pilaGenericaToolStripMenuItem.Text = "Pila Generica";
+            this.pilaGenericaToolStripMenuItem.Click += new System.EventHandler(this.pilaGenericaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -252,6 +271,8 @@ namespace EstructuraDeDatos
         private System.Windows.Forms.ToolStripMenuItem secuenciaDeFiconacciToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matricesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem memoramaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pilasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pilaGenericaToolStripMenuItem;
     }
 }
 
