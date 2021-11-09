@@ -96,5 +96,11 @@ namespace EstructuraDeDatos
                 MessageBox.Show("No se encontro elemento en la pila");
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            pila = new Stack<string>(new Stack<string>(pila.Reverse()));
+            imprimirPila();
+        }
     }
 }
