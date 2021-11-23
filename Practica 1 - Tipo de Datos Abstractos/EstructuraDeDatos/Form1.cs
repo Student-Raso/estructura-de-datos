@@ -61,5 +61,11 @@ namespace EstructuraDeDatos
             PilaGenerica frm = new PilaGenerica();
             frm.ShowDialog();
         }
+
+        private void notacionPostfijaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NotacionPostFija frm = new NotacionPostFija();
+            frm.ShowDialog();
+        }
     }
 }

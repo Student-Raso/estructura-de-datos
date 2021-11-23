@@ -102,5 +102,10 @@ namespace EstructuraDeDatos
             pila = new Stack<string>(new Stack<string>(pila.Reverse()));
             imprimirPila();
         }
+
+        private void PilaGenerica_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -184,6 +184,7 @@ namespace EstructuraDeDatos
             this.Controls.Add(this.dataGridView1);
             this.Name = "PilaGenerica";
             this.Text = "PilaGenerica";
+            this.Load += new System.EventHandler(this.PilaGenerica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

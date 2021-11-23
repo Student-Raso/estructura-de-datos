@@ -72,6 +72,12 @@
     <Compile Include="Memorama.Designer.cs">
       <DependentUpon>Memorama.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotacionPostFija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotacionPostFija.Designer.cs">
+      <DependentUpon>NotacionPostFija.cs</DependentUpon>
+    </Compile>
     <Compile Include="PilaGenerica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Memorama.resx">
       <DependentUpon>Memorama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotacionPostFija.resx">
+      <DependentUpon>NotacionPostFija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PilaGenerica.resx">
       <DependentUpon>PilaGenerica.cs</DependentUpon>
