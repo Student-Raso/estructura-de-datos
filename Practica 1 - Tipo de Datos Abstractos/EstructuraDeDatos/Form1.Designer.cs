@@ -46,11 +46,12 @@ namespace EstructuraDeDatos
             this.pilasYColasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilaGenericaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notacionPostfijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesBinariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.notacionPostfijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,7 +159,8 @@ namespace EstructuraDeDatos
             // pilasYColasToolStripMenuItem
             // 
             this.pilasYColasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pilasToolStripMenuItem});
+            this.pilasToolStripMenuItem,
+            this.colasToolStripMenuItem});
             this.pilasYColasToolStripMenuItem.Name = "pilasYColasToolStripMenuItem";
             this.pilasYColasToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.pilasYColasToolStripMenuItem.Text = "4. Pilas y colas";
@@ -175,9 +177,16 @@ namespace EstructuraDeDatos
             // pilaGenericaToolStripMenuItem
             // 
             this.pilaGenericaToolStripMenuItem.Name = "pilaGenericaToolStripMenuItem";
-            this.pilaGenericaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pilaGenericaToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.pilaGenericaToolStripMenuItem.Text = "Pila Generica";
             this.pilaGenericaToolStripMenuItem.Click += new System.EventHandler(this.pilaGenericaToolStripMenuItem_Click);
+            // 
+            // notacionPostfijaToolStripMenuItem
+            // 
+            this.notacionPostfijaToolStripMenuItem.Name = "notacionPostfijaToolStripMenuItem";
+            this.notacionPostfijaToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.notacionPostfijaToolStripMenuItem.Text = "Notacion Postfija";
+            this.notacionPostfijaToolStripMenuItem.Click += new System.EventHandler(this.notacionPostfijaToolStripMenuItem_Click);
             // 
             // arbolesBinariosToolStripMenuItem
             // 
@@ -225,12 +234,12 @@ namespace EstructuraDeDatos
     "llo de Software\r\nEstructura de Datos\r\nAndrés Raso Ramírez";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // notacionPostfijaToolStripMenuItem
+            // colasToolStripMenuItem
             // 
-            this.notacionPostfijaToolStripMenuItem.Name = "notacionPostfijaToolStripMenuItem";
-            this.notacionPostfijaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.notacionPostfijaToolStripMenuItem.Text = "Notacion Postfija";
-            this.notacionPostfijaToolStripMenuItem.Click += new System.EventHandler(this.notacionPostfijaToolStripMenuItem_Click);
+            this.colasToolStripMenuItem.Name = "colasToolStripMenuItem";
+            this.colasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.colasToolStripMenuItem.Text = "Colas";
+            this.colasToolStripMenuItem.Click += new System.EventHandler(this.colasToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -283,6 +292,7 @@ namespace EstructuraDeDatos
         private System.Windows.Forms.ToolStripMenuItem pilasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pilaGenericaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem notacionPostfijaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colasToolStripMenuItem;
     }
 }
 

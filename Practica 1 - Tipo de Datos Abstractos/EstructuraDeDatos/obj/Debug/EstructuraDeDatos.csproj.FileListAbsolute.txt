@@ -26,3 +26,4 @@ C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practic
 C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\obj\Debug\EstructuraDeDatos.Memorama.resources
 C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\obj\Debug\EstructuraDeDatos.PilaGenerica.resources
 C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\obj\Debug\EstructuraDeDatos.NotacionPostFija.resources
+C:\Users\hello\source\repos\EstructuraDeDatos-GitHub\estructura-de-datos\Practica 1 - Tipo de Datos Abstractos\EstructuraDeDatos\obj\Debug\EstructuraDeDatos.ColaGenerica.resources

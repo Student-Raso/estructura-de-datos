@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="ADT_1.cs" />
     <Compile Include="ADT_2.cs" />
+    <Compile Include="ColaGenerica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColaGenerica.Designer.cs">
+      <DependentUpon>ColaGenerica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fibonacci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ADT.resx">
       <DependentUpon>ADT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColaGenerica.resx">
+      <DependentUpon>ColaGenerica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fibonacci.resx">
       <DependentUpon>Fibonacci.cs</DependentUpon>
